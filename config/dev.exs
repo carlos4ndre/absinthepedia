@@ -36,8 +36,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :absinthepedia, Absinthepedia.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "absinthepedia_dev",
-  hostname: "localhost",
+  username: "brewmaster",
+  password: "brewmaster",
+  database: "absinthepedia",
+  hostname: "db",
   pool_size: 10
