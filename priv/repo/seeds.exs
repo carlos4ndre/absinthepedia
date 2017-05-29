@@ -1,7 +1,11 @@
 alias Absinthepedia.Repo
 alias Absinthepedia.Recipe
 alias Absinthepedia.Ingredient
+alias Absinthepedia.Unit
 
+##################
+## Recipes
+##################
 Repo.insert!(%Recipe{
              name: "Sazerac",
              description: "The Sazerac is a local New Orleans variation of a Cognac or whiskey cocktail, named for the Sazerac de Forge et Fils brand of Cognac brandy that served as its original main ingredient.",
@@ -21,6 +25,9 @@ Repo.insert!(%Recipe{
            })
 
 
+##################
+## Ingredients
+##################
 Repo.insert!(%Ingredient{
              name: "Absinthe",
              description: "Green distilled beverage",
@@ -55,3 +62,12 @@ Repo.insert!(%Ingredient{
              name: "Sugar",
              description: "N/A",
            })
+
+
+##################
+## Units
+##################
+Repo.insert!(%Unit{name: "unit"}) # unit
+Repo.insert!(%Unit{name: "kg"})   # kilograms
+Repo.insert!(%Unit{name: "l"})    # liter
+Repo.insert!(%Unit{name: "st"})   # shouts
