@@ -1,7 +1,7 @@
 defmodule Absinthepedia.Unit do
   use Absinthepedia.Web, :model
 
-  schema "unit" do
+  schema "units" do
     field :name, :string, size: 20
 
     timestamps()
@@ -13,6 +13,7 @@ defmodule Absinthepedia.Unit do
   def changeset(struct, params \\ %{}) do
     struct
     |> cast(params, [:name])
+    |> unique_constraint(:name)
     |> validate_required([:name])
   end
 end

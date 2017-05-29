@@ -10,6 +10,7 @@ defmodule Absinthepedia.Repo.Migrations.CreateRecipeIngredient do
 
       timestamps()
     end
+
     create index(:recipe_ingredients, [:recipe_id])
     create index(:recipe_ingredients, [:ingredient_id])
     create index(:recipe_ingredients, [:unit_id])

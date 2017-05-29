@@ -8,5 +8,6 @@ defmodule Absinthepedia.Repo.Migrations.CreateUnit do
       timestamps()
     end
 
+    create unique_index(:units, [:name])
   end
 end

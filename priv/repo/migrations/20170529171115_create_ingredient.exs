@@ -9,5 +9,6 @@ defmodule Absinthepedia.Repo.Migrations.CreateIngredient do
       timestamps()
     end
 
+    create unique_index(:ingredients, [:name])
   end
 end

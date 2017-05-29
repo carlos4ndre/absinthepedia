@@ -14,6 +14,7 @@ defmodule Absinthepedia.Ingredient do
   def changeset(struct, params \\ %{}) do
     struct
     |> cast(params, [:name, :description])
+    |> unique_constraint(:name)
     |> validate_required([:name, :description])
   end
 end
