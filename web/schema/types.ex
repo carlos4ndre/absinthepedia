@@ -6,4 +6,9 @@ defmodule Absinthepedia.Schema.Types do
     field :description, :string
     field :abv, :float
   end
+
+  object :ingredient do
+    field :name, :string
+    field :description, :string
+  end
 end

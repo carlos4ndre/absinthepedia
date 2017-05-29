@@ -1,5 +1,6 @@
 alias Absinthepedia.Repo
 alias Absinthepedia.Recipe
+alias Absinthepedia.Ingredient
 
 Repo.insert!(%Recipe{
              name: "Sazerac",
@@ -17,4 +18,40 @@ Repo.insert!(%Recipe{
              name: "Death in the Afternoon",
              description: "Death in the Afternoon, also called the Hemingway or the Hemingway Champagne, is a cocktail made up of absinthe and Champagne invented by Ernest Hemingway.",
              abv: 40.00,
+           })
+
+
+Repo.insert!(%Ingredient{
+             name: "Absinthe",
+             description: "Green distilled beverage",
+           })
+
+Repo.insert!(%Ingredient{
+             name: "Champagne",
+             description: "Sparkling wine",
+           })
+
+Repo.insert!(%Ingredient{
+             name: "Cognac",
+             description: "Brandy",
+           })
+
+Repo.insert!(%Ingredient{
+             name: "Gin",
+             description: "Spirit derived from juniper berries",
+           })
+
+Repo.insert!(%Ingredient{
+             name: "Grenadine",
+             description: "Non-alcoholic bar syrup",
+           })
+
+Repo.insert!(%Ingredient{
+             name: "Orange Juice",
+             description: "N/A",
+           })
+
+Repo.insert!(%Ingredient{
+             name: "Sugar",
+             description: "N/A",
            })
