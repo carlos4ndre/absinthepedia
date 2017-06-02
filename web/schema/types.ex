@@ -11,4 +11,8 @@ defmodule Absinthepedia.Schema.Types do
     field :name, :string
     field :description, :string
   end
+
+  object :unit do
+    field :name, :string
+  end
 end
