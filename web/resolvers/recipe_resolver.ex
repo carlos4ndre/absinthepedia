@@ -1,6 +1,6 @@
 defmodule Absinthepedia.RecipeResolver do
-  alias Absinthepedia.Recipe
   alias Absinthepedia.Repo
+  alias Absinthepedia.Recipe
 
   def all(_args, _info) do
     {:ok, Repo.all(Recipe)}

@@ -2,7 +2,7 @@ alias Absinthepedia.Repo
 alias Absinthepedia.Recipe
 alias Absinthepedia.Ingredient
 alias Absinthepedia.Unit
-alias Absinthepedia.RecipeIngredient
+alias Absinthepedia.RecipeStep
 
 #############
 ## Recipes
@@ -78,30 +78,30 @@ shots = Repo.insert!(%Unit{name: "st"})
 
 
 #######################
-## Recipe Ingredients
+## Recipe Steps
 #######################
 # TODO: use insert_all instead of insert
 
 #sazeract
-Repo.insert(%RecipeIngredient{
+Repo.insert(%RecipeStep{
   amount: 0.03,
   recipe: sazeract,
   ingredient: cognac,
   unit: liter,
 })
-Repo.insert(%RecipeIngredient{
+Repo.insert(%RecipeStep{
   amount: 0.01,
   recipe: sazeract,
   ingredient: absinthe,
   unit: liter,
 })
-Repo.insert(%RecipeIngredient{
+Repo.insert(%RecipeStep{
   amount: 1.0,
   recipe: sazeract,
   ingredient: sugar,
   unit: shots,
 })
-Repo.insert(%RecipeIngredient{
+Repo.insert(%RecipeStep{
   amount: 2.0,
   recipe: sazeract,
   ingredient: bitters,
@@ -110,25 +110,25 @@ Repo.insert(%RecipeIngredient{
 
 
 # monkey gland
-Repo.insert(%RecipeIngredient{
+Repo.insert(%RecipeStep{
   amount: 0.05,
   recipe: monkey_gland,
   ingredient: gin,
   unit: liter,
 })
-Repo.insert(%RecipeIngredient{
+Repo.insert(%RecipeStep{
   amount: 0.03,
   recipe: monkey_gland,
   ingredient: orange_juice,
   unit: liter,
 })
-Repo.insert(%RecipeIngredient{
+Repo.insert(%RecipeStep{
   amount: 0.01,
   recipe: monkey_gland,
   ingredient: absinthe,
   unit: liter,
 })
-Repo.insert(%RecipeIngredient{
+Repo.insert(%RecipeStep{
   amount: 0.01,
   recipe: monkey_gland,
   ingredient: grenadine,
@@ -137,13 +137,13 @@ Repo.insert(%RecipeIngredient{
 
 
 # death in the afternoon
-Repo.insert(%RecipeIngredient{
+Repo.insert(%RecipeStep{
   amount: 1.0,
   recipe: death_in_the_afternoon,
   ingredient: absinthe,
   unit: shots,
 })
-Repo.insert(%RecipeIngredient{
+Repo.insert(%RecipeStep{
   amount: 1.0,
   recipe: death_in_the_afternoon,
   ingredient: champagne,

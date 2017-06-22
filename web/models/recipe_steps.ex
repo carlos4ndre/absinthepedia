@@ -1,11 +1,14 @@
-defmodule Absinthepedia.RecipeIngredient do
+defmodule Absinthepedia.RecipeStep do
   use Absinthepedia.Web, :model
+  alias Absinthepedia.Recipe
+  alias Absinthepedia.Ingredient
+  alias Absinthepedia.Unit
 
-  schema "recipe_ingredients" do
+  schema "recipe_steps" do
     field :amount, :float
-    belongs_to :recipe, Absinthepedia.Recipe
-    belongs_to :ingredient, Absinthepedia.Ingredient
-    belongs_to :unit, Absinthepedia.Unit
+    belongs_to :recipe, Recipe
+    belongs_to :ingredient, Ingredient
+    belongs_to :unit, Unit
 
     timestamps()
   end

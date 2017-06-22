@@ -1,10 +1,12 @@
 defmodule Absinthepedia.Recipe do
   use Absinthepedia.Web, :model
+  alias Absinthepedia.RecipeStep
 
   schema "recipes" do
     field :name, :string
     field :description, :string
     field :abv, :decimal
+    has_many :steps, RecipeStep
 
     timestamps()
   end
