@@ -83,25 +83,25 @@ shots = Repo.insert!(%Unit{name: "st"})
 # TODO: use insert_all instead of insert
 
 #sazeract
-Repo.insert(%RecipeStep{
+Repo.insert!(%RecipeStep{
   amount: 0.03,
   recipe: sazeract,
   ingredient: cognac,
   unit: liter,
 })
-Repo.insert(%RecipeStep{
+Repo.insert!(%RecipeStep{
   amount: 0.01,
   recipe: sazeract,
   ingredient: absinthe,
   unit: liter,
 })
-Repo.insert(%RecipeStep{
+Repo.insert!(%RecipeStep{
   amount: 1.0,
   recipe: sazeract,
   ingredient: sugar,
   unit: shots,
 })
-Repo.insert(%RecipeStep{
+Repo.insert!(%RecipeStep{
   amount: 2.0,
   recipe: sazeract,
   ingredient: bitters,
@@ -110,25 +110,25 @@ Repo.insert(%RecipeStep{
 
 
 # monkey gland
-Repo.insert(%RecipeStep{
+Repo.insert!(%RecipeStep{
   amount: 0.05,
   recipe: monkey_gland,
   ingredient: gin,
   unit: liter,
 })
-Repo.insert(%RecipeStep{
+Repo.insert!(%RecipeStep{
   amount: 0.03,
   recipe: monkey_gland,
   ingredient: orange_juice,
   unit: liter,
 })
-Repo.insert(%RecipeStep{
+Repo.insert!(%RecipeStep{
   amount: 0.01,
   recipe: monkey_gland,
   ingredient: absinthe,
   unit: liter,
 })
-Repo.insert(%RecipeStep{
+Repo.insert!(%RecipeStep{
   amount: 0.01,
   recipe: monkey_gland,
   ingredient: grenadine,
@@ -137,13 +137,13 @@ Repo.insert(%RecipeStep{
 
 
 # death in the afternoon
-Repo.insert(%RecipeStep{
+Repo.insert!(%RecipeStep{
   amount: 1.0,
   recipe: death_in_the_afternoon,
   ingredient: absinthe,
   unit: shots,
 })
-Repo.insert(%RecipeStep{
+Repo.insert!(%RecipeStep{
   amount: 1.0,
   recipe: death_in_the_afternoon,
   ingredient: champagne,
