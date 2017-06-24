@@ -1,20 +1,14 @@
 # Absinthepedia
 
-To start your Phoenix app:
+Alcoholic wiki built with Phoenix, GraphQL and React.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Install Node.js dependencies with `npm install`
-  * Start Phoenix endpoint with `mix phoenix.server`
+🔥🔥🔥 DISCLAMER: This project is only for learning purposes, and it doesn't
+sponser any crazy party 🍺🍸🍹🍶😎
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+## How to run the app?
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+We use docker to spin up everything, go ahead and run this command:
+$ docker-compose up --build
 
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+Create dummy data to play around
+$ docker-compose run web mix populate_db
