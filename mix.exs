@@ -19,7 +19,7 @@ defmodule Absinthepedia.Mixfile do
   def application do
     [mod: {Absinthepedia, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :absinthe_relay]]
   end
 
   # Specifies which paths to compile per environment.
@@ -42,6 +42,7 @@ defmodule Absinthepedia.Mixfile do
      {:absinthe, "~> 1.3.0"},
      {:absinthe_plug, "~> 1.3.1"},
      {:absinthe_ecto, git: "https://github.com/absinthe-graphql/absinthe_ecto.git"},
+     {:absinthe_relay, "~> 1.3"},
      {:poison, "~> 3.1.0", override: true},
      {:faker, "~> 0.8.0"},
    ]
