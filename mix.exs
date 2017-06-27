@@ -19,7 +19,7 @@ defmodule Absinthepedia.Mixfile do
   def application do
     [mod: {Absinthepedia, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex, :absinthe_relay]]
+                    :phoenix_ecto, :postgrex, :absinthe_relay, :plug_static_index_html]]
   end
 
   # Specifies which paths to compile per environment.
@@ -43,6 +43,8 @@ defmodule Absinthepedia.Mixfile do
      {:absinthe_plug, "~> 1.3.1"},
      {:absinthe_ecto, git: "https://github.com/absinthe-graphql/absinthe_ecto.git"},
      {:absinthe_relay, "~> 1.3"},
+     {:cors_plug, "~> 1.3"},
+     {:plug_static_index_html, "~> 0.1.2"},
      {:poison, "~> 3.1.0", override: true},
      {:faker, "~> 0.8.0"},
    ]
@@ -55,9 +57,9 @@ defmodule Absinthepedia.Mixfile do
   #
   # See the documentation for `Mix` for more info on aliases.
   defp aliases do
-    ["ecto.setup": ["ecto.create", "ecto.migrate"],
+    ["ecto.setup": ["ecto.create", "ecto.migrate", "db.populate"],
      "ecto.reset": ["ecto.drop", "ecto.setup"],
-     "populate_db": ["run priv/repo/seeds.exs"],
+     "db.populate": ["run priv/repo/seeds.exs"],
      "test": ["ecto.create --quiet", "ecto.migrate", "test"]]
   end
 end

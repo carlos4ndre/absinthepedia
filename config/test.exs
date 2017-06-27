@@ -17,3 +17,6 @@ config :absinthepedia, Absinthepedia.Repo,
   database: "absinthepedia_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+# Hostnames
+config :absinthepedia, hostname: "localhost"

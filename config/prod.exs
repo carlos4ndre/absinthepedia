@@ -59,3 +59,6 @@ config :logger, level: :info
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
 import_config "prod.secret.exs"
+
+# Hostnames
+config :phoenix, hostname: System.get_env("PHOENIX_HOSTNAME")

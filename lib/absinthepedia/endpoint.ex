@@ -38,5 +38,11 @@ defmodule Absinthepedia.Endpoint do
     key: "_absinthepedia_key",
     signing_salt: "boQltUs6"
 
+  plug CORSPlug, origin: [
+    "http://#{Application.get_env(:phoenix, :hostname)}:4000",
+  ]
+
+  plug Plug.Static.IndexHtml, at: "/"
+  plug Plug.Static, at: "/", from: "priv/react/build/"
   plug Absinthepedia.Router
 end

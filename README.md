@@ -9,6 +9,3 @@ sponser any crazy party 🍺🍸🍹🍶😎
 
 We use docker to spin up everything, go ahead and run this command:
 $ docker-compose up --build
-
-Create dummy data to play around
-$ docker-compose run web mix populate_db
