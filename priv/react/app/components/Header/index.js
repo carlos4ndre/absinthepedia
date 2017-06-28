@@ -12,8 +12,8 @@ class Header extends React.Component { // eslint-disable-line react/prefer-state
   render() {
     return (
       <div>
-        <A href="https://twitter.com/mxstbr">
-          <Img src={Banner} alt="react-boilerplate - Logo" />
+        <A href="/">
+          <Img src={Banner} alt="Logo" />
         </A>
         <NavBar>
           <HeaderLink to="/">

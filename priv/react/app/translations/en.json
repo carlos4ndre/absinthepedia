@@ -3,7 +3,5 @@
   "boilerplate.components.Header.recipes": "Recipes",
   "boilerplate.components.Header.home": "Home",
   "boilerplate.containers.HomePage.start_project.header": "Welcome! The bar is open, have look around and find yourself a 🍸",
-  "boilerplate.containers.LocaleToggle.de": "de",
-  "boilerplate.containers.LocaleToggle.en": "en",
   "boilerplate.containers.NotFoundPage.header": "Page not found."
 }
