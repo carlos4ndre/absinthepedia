@@ -25,9 +25,9 @@ export default class RecipesPage extends React.Component { // eslint-disable-lin
     return (
       <div>
         <Helmet
-          title="Recipes Page"
+          title="Absinthepedia 🍹"
           meta={[
-            { name: 'description', content: 'Recipes page of React.js Boilerplate application' },
+            { name: 'description', content: 'Absinthepedia 🍹' },
           ]}
         />
         <H1>
