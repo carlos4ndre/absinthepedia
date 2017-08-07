@@ -1,0 +1,5 @@
+test:
+  adapter: postgresql
+  database: absinthepedia
+  username: brewmaster
+  password: brewmaster
