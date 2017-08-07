@@ -7,8 +7,8 @@
 
 Website built with Phoenix, GraphQL and React.
 
-🔥🔥🔥 DISCLAMER: This project is only for learning purposes, 
-and it doesn't pretend to sponser any crazy party.
+*DISCLAMER*: This project is only for learning purposes,
+and it doesn't pretend to sponsor any crazy party 🎅
 
 ## How to run the app?
 
