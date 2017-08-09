@@ -1,7 +1,5 @@
 FROM elixir:latest
 
-MAINTAINER Carlos Andre (carlos.ulrich@gmail.com)
-
 # Update the package repository
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install locales sudo
